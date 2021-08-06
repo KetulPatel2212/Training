@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RegisterForm</title>
+    </head>
+    <head>
+        <form action="#" method="post" style="padding-left: 40%; padding-top: 10%;text-align: center;">
+            <table border="2px" style="border-collapse: collapse;">
+
+                <tr><td colspan="2"><h1>Register Form</h1></td></tr>
+                <tr>
+                    <td>Name: </td>
+                    <td><input type="text" name="u_name" placeholder="Enter your name...." required/></td>
+                </tr>
+                <tr>
+                    <td>Password: </td>
+                    <td><input type="password" name="u_pass" placeholder="Enter your password...." required/></td>
+                </tr>
+                <tr>
+                    <td>Email: </td>
+                    <td><input type="email" name="u_email" placeholder="Enter your email...." required/></td>
+                </tr>
+                <tr>
+                    <td>Gender </td>
+                    <td><input type="radio" name="u_gender" required/>Male &nbsp; &nbsp;
+                    <input type="radio" name="u_gender" required/>Female</td>
+                </tr>
+                <tr>
+                    <td>Hidden Field </td>
+                    <td><input type="hidden" name="u_hidden"/></td>
+                </tr>
+                <tr>
+                    <td>State: </td>
+                    <td>
+                        <select name="u_state">
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Goa">Goa</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td>
+                        <textarea name="u_address" rows="5" cols="15" style="resize: none;"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="submit"/> &nbsp; &nbsp;
+                        <input type="reset" value="reset"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </head>
+</html>
