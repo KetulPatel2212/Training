@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Work History</title>
+    </head>
+
+    <body>
+        <div style="height: 50px; width: 100%; ">
+            <h1>Tell us about your most recent job</h1>
+            <h3>We’ll start there and work backward.</h3>
+            <hr/>
+        </div>
+        <form action="Resume-3.html" method="POST" style="padding-top: 120px;padding-left: 80px;">
+            <fieldset style="width: 430px;">
+                <legend>Work History</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label><b>Job Title</b></label><br/>
+                            <input type="text" name="U_job" style="margin-top: 9px; padding-top: 9px; width: 207px;" maxlength="30" />
+                        </td>
+                        <td>
+                            <label><b style="margin-left: 8px;">Employer</b></label><br/>
+                            <input type="text" name="U_emp" style="margin-top: 9px; padding-top: 9px; width: 207px; margin-left: 8px;" maxlength="35" />
+                        </td>
+                    </tr>
+                </table><br/>
+
+                <table>
+                    <tr>
+                        <td>
+                            <label><b>Start Date</b></label><br/>
+                            <input type="date" name="U_startDate" style="margin-top: 9px; height: 32px; width: 207px;" />
+                        </td>
+                        <td>
+                            <label><b style="margin-left: 8px;">End Date</b></label><br/>
+                            <input type="date" name="U_endDate" style="margin-top: 9px; height: 32px; width: 207px; margin-left: 8px;" />
+                        </td>
+                    </tr>
+                </table><br/>
+
+                <label><b>Job Description</b></label><br/><br/>
+                <textarea rows="5" cols="40"></textarea><br/><br/>
+
+                <input type="checkbox" name="U_current"/>I currently work here
+                <br/><br/>
+
+                <a href="Resume-1.html"><input type="button" value="BACK"/></a>
+                <input style="margin-left: 7px;" type="submit" value="NEXT: EDUCATION"/>
+            </fieldset>
+        </form>
+    </body>
+</html>
