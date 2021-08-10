@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form 2</title>
+    </head>
+
+    <body>
+        <form action="#" method="GET" style="border-color: black;background-color: 	#eeff00b0;width: 800px;">
+            <div style="padding-top: 20px; padding-left: 10px; padding-right: 10px; text-align: center;">
+                <p><b>KM Cusomer HTML From Example Using AppleScript</b><br/>(by JMichaelTX)</p><br/>
+                <table border="1" style="border-collapse: collapse; margin-left: 100px;" cellpadding="4">
+                    <tr>
+                        <td><label>Name:</label></td>
+                        <td><input type="text" required name="u_name" maxlength="30"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Email:</label></td>
+                        <td><input type="email" required name="u_email"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Password:</label></td>
+                        <td><input type="password" required name="u_pass" minlength="8"></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label>Approval Required:</label><br/>
+                            Click on the button or text to<br/>
+                            check/uncheck.
+                        </td>
+                        <td>
+                            <input type="checkbox" required name="u_approval" >
+                            Do you approve?
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label>Pick Your Favorite:</label>
+                            Click on the button or text to<br/>
+                            select.
+                        </td>
+                        <td>
+                            <input type="radio" required name="u_favority" value="choice-A">choice A<br/>
+                            <input type="radio" required name="u_favority" value="choice-B">choice B<br/>
+                            <input type="radio" required name="u_favority" value="choice-C">choice C
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><labele>Popup Menu:</label></td>
+                        <td>
+                            <select name="u_select">
+                                <option value="1">option 1</option>
+                                <option value="2">option 2</option>
+                                <option value="3">option 3</option>
+                                <option value="4">option 4</option>
+                                <option value="5">option 5</option>
+                                <option value="6">option 6</option>
+                                <option value="7">option 7</option>
+                                <option value="8">option 8</option>
+                                <option value="9">option 9</option>
+                                <option value="10">option 10</option>
+                                <option value="11">option 11</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label>List:</label>
+                            Setup Options:
+                            <ul>
+                                <li>Number of rows to display</li>
+                                <li>Allow Multi-selected</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <select name="u_select" multiple>
+                                <option value="1">option 1</option>
+                                <option value="2">option 2</option>
+                                <option value="3">option 3</option>
+                                <option value="4">option 4</option>
+                                <option value="5">option 5</option>
+                                <option value="6">option 6</option>
+                                <option value="7">option 7</option>
+                                <option value="8">option 8</option>
+                                <option value="9">option 9</option>
+                                <option value="10">option 10</option>
+                                <option value="11">option 11</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Field Ignored by KM:</label></td>
+                        <td><input type="number" required name="u_ignored" value="10384"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Text Area:</label></td>
+                        <td>
+                            <textarea name="u_textarea" cols="30" rows="10">
+                                Now is the time for all good men to come to the aid of their country
+                            </textarea>
+                        </td>
+                    </tr>
+                </table><br/>
+
+                <input style="border-radius: 10px;" type="submit" name="submit" value="Save"> &nbsp;
+                <input style="border-radius: 10px;" type="button" name="cancel" value="Cancel"> &nbsp;
+                <input style="border-radius: 10px;" type="button" name="resize" value="Resize">
+                <br/><br/>
+            </div>
+        </form>
+    </body>
+</html>

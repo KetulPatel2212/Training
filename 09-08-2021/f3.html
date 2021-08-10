@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form 3</title>
+    </head>
+
+    <body>
+        <form action="#" method="GET">
+            <table border="1">
+                <tr>
+                    <th colspan="2">Pizz Shop 2.0</th>
+                </tr>
+
+                <tr>
+                    <td><label>Name</label></td>
+                    <td><input type="text" name="u_name" required></td>
+                </tr>
+
+                <tr>
+                    <td>Pizza Topping</td>
+                    <td>
+                        <input type="radio" name="u_name" required>Supreme<br/>
+                        <input type="radio" name="u_name" required>Vegetarian<br/>
+                        <input type="radio" name="u_name" required>Hawaiian<br/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Pizza Sauce</td>
+                    <td>
+                        <select>
+                            <option value="Tameto1">Tomato1</option>
+                            <option value="Tameto2">Tomato2</option>
+                            <option value="Tameto3">Tomato3</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Optional Extras</td>
+                    <td>
+                        <input type="checkbox" name="e_cheese"/>Extra Cheese
+                        <input type="checkbox" name="g_base"/>Gluten Free Base
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        Delivery Instructions:<br/>
+                        <textarea name="u_ins" cols="30" rows="10"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><input type="submit" name="submit" value="Send my Order"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
