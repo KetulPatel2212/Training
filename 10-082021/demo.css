@@ -1,0 +1,35 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    background-color:#464660;
+}
+
+a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.bodyContain {
+    background-color: white;
+    height: 800px;
+    width: 1200px;
+    margin: 0 0 0 170px;
+}
+
+#Image{
+    width: 1000px;
+}
+
+.Left,.Right {
+    color: #464660;
+    padding-top: 70px;
+}
+
+p {
+    padding: 0 0 0 70px;
+    text-align: left;
+}
