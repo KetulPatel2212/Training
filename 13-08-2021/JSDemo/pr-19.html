@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSDemo 19</title>
+
+        <script>
+
+            var number = parseInt(window.prompt("Enter a number : "));
+            var start = parseInt(window.prompt("Enter a starting number : "));
+            var end = parseInt(window.prompt("Enter a ending number : "));
+
+            if(start > end)
+                document.write("Your starting number " + start + " is greater than ending number " + end);
+            else {
+                while(start <= end) {
+                    document.write(number + " x " + start + " = " + (number * start) + "<br/>");
+                    start++;
+                }
+            }
+
+        
+        </script>
+    </head>
+
+    <body>
+        
+        <h1>Take a number from the user. Take starting number & ending number from the user. Generate multiplication table of that number.</h1>
+    </body>
+</html>

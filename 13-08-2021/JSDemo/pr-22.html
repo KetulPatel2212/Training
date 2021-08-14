@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSDemo 22</title>
+
+        <script>
+
+            var number1 = parseInt(window.prompt("Enter a 1st number"));
+            var number2 = parseInt(window.prompt("Enter a 2nd number"));
+            var operator = parseInt(window.prompt("Enter any 1 operator (Ex. + = 1, - = 2, * = 3, / = 4)"));
+           
+            
+            switch(operator) {
+                case 1:
+                    document.write("Your sum is : " + (number1 + number2));
+                    break;
+
+                case 2:
+                    document.write("Your sub is : " + (number1 - number2));
+                    break;
+
+                case 3:
+                    document.write("Your mul is : " + (number1 * number2));
+                    break;
+
+                case 4:
+                    document.write("Your div is : " + (number1 / number2));
+                    break;
+
+                default: 
+                    document.write("invalid operator");
+            }
+
+        </script>
+    </head>
+
+    <body>
+        
+        <h1>Make a simple calculator using switch case.</h1>
+        <ol>
+            <li>Addition</li>
+            <li>Subtraction</li>
+            <li>Multiplication</li>
+            <li>Division</li>
+        </ol>
+    </body>
+</html>

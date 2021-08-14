@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSDemo 18</title>
+
+        <script>
+
+            var character = window.prompt("Enter a 1st character : ");
+
+            if(character.length == 1) {
+                var character1 = character.charAt(0);
+                if((character1 <= 'z' && character1 >= 'a') || (character1 <= 'Z' && character1 >= 'A'))
+                    document.write("Your character '" + character1 + "' is character alphabet.");
+                else
+                    document.write("Your character '" + character1 + "' is not character alphabet.");
+            } 
+            else
+                document.write("Your provided '" + character + "' is not character.");
+        </script>
+    </head>
+
+    <body>
+        
+        <h1>Write a program to check whether character is alphabet or not.</h1>
+    </body>
+</html>
