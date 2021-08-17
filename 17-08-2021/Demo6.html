@@ -1,0 +1,18 @@
+<html>
+
+<body>
+    <button onclick="red()" class="red">Click to change to red button</button>
+    <button onclick="red()" class="red">Click to change to red button</button>
+    <button onclick="red()" class="red">Click to change to red button</button>
+    <button onclick="red()" class="red">Click to change to red button</button>
+    <script type="text/javascript">
+        function red() {
+            document.getElementsByClassName('red')[0].style.backgroundColor = 'red';
+            document.getElementsByClassName('red')[1].style.backgroundColor = 'yellow';
+            document.getElementsByClassName('red')[2].style.backgroundColor = 'green';
+            document.getElementsByClassName('red')[3].style.backgroundColor = 'blue';
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <p>Hello JS</p>
+    <p>Bye JS</p>
+
+    <script>
+        document.getElementsByTagName('p')[0].style.backgroundColor = "red";
+
+        var texts = document.getElementsByTagName("p");
+
+        for (var element in texts)
+            texts[element].style.backgroundColor = "yellow";
+    </script>
+</body>
+
+</html>

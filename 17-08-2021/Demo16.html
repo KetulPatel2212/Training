@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <script>
+        // Sample JS array
+        var arr = ["Apple", "Banana", "Mango", "Orange",
+            "Papaya"
+        ];
+
+        // Sample JS object
+        var obj = {
+            "name": "Akash",
+            "age": 30,
+            "country": "India"
+        };
+
+        // Converting JS array to JSON string
+        var jsonArray = JSON.stringify(arr);
+        document.write(jsonArray + "<br/>");
+
+        // Converting JS object to JSON string
+        var jsonObject = JSON.stringify(obj);
+        document.write(jsonObject + "<br/>");
+
+
+        var obj2 = JSON.parse(jsonArray);
+
+        // Converting JSON-encoded string to JS object
+        var obj1 = JSON.parse(jsonObject);
+
+        // Accessing individual value from JS object
+        document.write(obj1.name + " ");
+        document.write(obj1.age + " ");
+        document.write(obj1.country + "<br/>");
+
+        document.write(obj2);
+    </script>
+</body>
+
+</html>

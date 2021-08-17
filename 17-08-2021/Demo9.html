@@ -1,0 +1,17 @@
+<html>
+
+<body>
+    <div id='data'></div>
+
+    <p style="display: none;" id="p1">Hello</p><br/>
+    <input type="button" value="Click Me" onclick="showdata()">
+    <script type="text/javascript">
+        function showdata() {
+            document.getElementById('data').innerHTML = "Data Loaded";
+
+            document.getElementById('p1').style.display = "inline";
+        }
+    </script>
+</body>
+
+</html>

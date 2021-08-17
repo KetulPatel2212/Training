@@ -1,0 +1,29 @@
+<html>
+
+<body>
+
+    <script type="text/javascript">
+        var person = {
+            name: "Akash",
+            age: 30,
+            gender: "Male",
+            displayName: function() {
+                alert(this.name);
+            }
+        };
+
+        person.displayName();
+
+        document.write(person["age"] + "<br/>");
+
+        person.age = 40;
+
+        delete person.displayName;
+
+        for (var i in person) {
+            document.write(person[i] + "<br>");
+        }
+    </script>
+</body>
+
+</html>
