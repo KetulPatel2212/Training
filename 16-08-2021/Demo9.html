@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+
+</body>
+<button type="button" onclick="myAlert()">Alert</button>
+<button type="button" onclick="myPrompt()">Prompt</button>
+<button type="button" onclick="myConfirm()">confirm</button>
+
+<script>
+    var name = "Ketul",
+        conf;
+
+    function myAlert() {
+        window.alert("Welcome to this site " + name);
+    }
+
+    function myPrompt() {
+        name = window.prompt("Enter your name : ", name);
+        myAlert();
+        myConfirm();
+        document.write("Welcome Name " + name + " " + conf);
+    }
+
+    function myConfirm() {
+        conf = window.confirm("Ary you ready to provide your name ?");
+    }
+</script>
+
+</html>

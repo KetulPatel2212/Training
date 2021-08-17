@@ -1,0 +1,20 @@
+<html>
+
+<body>
+    <form name="frm">
+        Enter Name: <input type="text" name="nm1" onkeyUp="upp()">
+        <br/> Enter Name: <input type="text" name="nm2" onkeyDown="low()">
+
+    </form>
+    <script>
+        function upp() {
+            frm.nm1.value = frm.nm1.value.toUpperCase();
+        }
+
+        function low() {
+            frm.nm2.value = frm.nm2.value.toLowerCase();
+        }
+    </script>
+</body>
+
+</html>
