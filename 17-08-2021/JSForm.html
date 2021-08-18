@@ -29,75 +29,97 @@
             height: 32px;
             margin-top: 8px;
         }
+        
+        #show {
+            height: 50px;
+            margin-top: 200px;
+            margin-left: 80px;
+            float: right;
+        }
+        
+        #disp {
+            display: inline-block;
+        }
+        
+        form select {
+            width: 212px;
+        }
     </style>
 </head>
 
 <body>
-    <form action="#" method="POST" name="reg" onsubmit="return checkFocus()">
-        <fieldset>
-            <legend>Personal Details</legend>
-            <table>
-                <tr>
-                    <td>
-                        <label><b>First Name</b></label><br/>
-                        <input type="text" name="u_fname" />
-                    </td>
-                    <td>
-                        <label><b style="margin-left: 8px;">Last Name</b></label><br/>
-                        <input type="text" name="u_lname" style="margin-left: 8px;" />
-                    </td>
-                </tr>
-            </table><br/>
+    <div id="disp">
+        <div style="float: left;">
+            <form action="#" method="POST" name="reg" onsubmit="return checkFocus()">
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <label><b>First Name</b></label><br/>
+                                <input type="text" name="u_fname" />
+                            </td>
+                            <td>
+                                <label><b style="margin-left: 8px;">Last Name</b></label><br/>
+                                <input type="text" name="u_lname" style="margin-left: 8px;" />
+                            </td>
+                        </tr>
+                    </table><br/>
 
-            <label class="lab"><b>Mobile No.</b></label><br/>
-            <input type="number" name="u_number" style="margin-left: 2px;" min="0" />
-            <br/><br/>
+                    <label class="lab"><b>Mobile No.</b></label><br/>
+                    <input type="number" name="u_number" style="margin-left: 2px;" min="0" />
+                    <br/><br/>
 
-            <label class="lab"><b>Date Of Birth</b></label><br/>
-            <input type="date" name="u_dob" style="margin-left: 2px;" />
-            <br/><br/>
+                    <label class="lab"><b>Date Of Birth</b></label><br/>
+                    <input type="date" name="u_dob" style="margin-left: 2px;" />
+                    <br/><br/>
 
-            <label class="lab"><b>Enter a State</b></label><br/>
-            <select class="lab" name="u_state">
-                <option value="">Select a state</option>
-                <option value="Gujarat1">Gujarat1</option>
-                <option value="Gujarat2">Gujarat2</option>
-                <option value="Gujarat3">Gujarat3</option>
-                <option value="Gujarat4">Gujarat4</option>
-                <option value="Gujarat5">Gujarat5</option>
-                <option value="Gujarat6">Gujarat6</option>
-                <option value="Gujarat7">Gujarat7</option>
-                <option value="Gujarat8">Gujarat8</option>
-                <option value="Gujarat9">Gujarat9</option>
-                <option value="Gujarat10">Gujarat10</option>
-            </select>
-            <br/><br/>
-        </fieldset>
-        <input type="submit" value="Submit" />
-    </form>
+                    <label class="lab"><b>Enter a State</b></label><br/>
+                    <select class="lab" name="u_state">
+                        <option value="">Select a state</option>
+                        <option value="Gujarat1">Gujarat1</option>
+                        <option value="Gujarat2">Gujarat2</option>
+                        <option value="Gujarat3">Gujarat3</option>
+                        <option value="Gujarat4">Gujarat4</option>
+                        <option value="Gujarat5">Gujarat5</option>
+                        <option value="Gujarat6">Gujarat6</option>
+                        <option value="Gujarat7">Gujarat7</option>
+                        <option value="Gujarat8">Gujarat8</option>
+                        <option value="Gujarat9">Gujarat9</option>
+                        <option value="Gujarat10">Gujarat10</option>
+                    </select>
+                    <br/><br/>
+                </fieldset>
+                <input type="submit" value="Submit" />
+            </form>
+        </div>
 
-    <div id="show"></div>
+        <div id="show"></div>
+    </div>
     <script>
         function checkFocus() {
 
             if (document.reg.u_fname.value.length < 5) {
                 // msg += "please enter a first name with a 5 character <br/>";
+
                 document.getElementById("show").innerHTML = "please enter a first name with a 5 character <br/>";
+                reg.u_fname.focus();
                 return false;
             } else if (document.reg.u_lname.value.length < 5) {
                 document.getElementById("show").innerHTML = "please enter a last name with a 5 character";
-                return false;
-            } else if (document.reg.u_lname.value.length < 5) {
-                document.getElementById("show").innerHTML = "please enter a last name with a 5 character";
+                reg.u_lname.focus();
                 return false;
             } else if (document.reg.u_number.value.length < 10) {
                 document.getElementById("show").innerHTML = "please enter 10 digit number";
+                reg.u_number.focus();
                 return false;
             } else if (document.reg.u_dob.value.length == "") {
                 document.getElementById("show").innerHTML = "please enter a DOB";
+                reg.u_dob.focus();
                 return false;
             } else if (document.reg.u_state.value.length == "") {
                 document.getElementById("show").innerHTML = "please enter a state";
+                reg.u_state.focus();
                 return false;
             }
             // document.getElementById("show").innerHTML = msg;
