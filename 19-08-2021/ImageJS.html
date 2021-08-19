@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <img src="photo-1.jpeg" id="photo1" alt="photo1" title="Photo1" onmouseover="imageMouseOver(this)" onmouseout="imageMouseOut(this)" onclick="imageMouseClick(this)" style="height: 200px;" />
+</body>
+<script>
+    function imageMouseOver(img) {
+        document.getElementById("photo1").addEventListener("mouseover", function() {
+            img.title = "Photo2";
+            img.src = "photo-2.jpeg";
+        });
+    }
+
+    function imageMouseOut(img) {
+        document.getElementById("photo1").addEventListener("mouseout", function() {
+            img.src = "photo-3.jpeg";
+            img.title = "Photo3";
+        });
+    }
+
+    function imageMouseClick(img) {
+        document.getElementById("photo1").addEventListener("click", function() {
+            img.src = "photo-4.jpeg";
+            img.title = "Photo4";
+        });
+    }
+</script>
+
+</html>

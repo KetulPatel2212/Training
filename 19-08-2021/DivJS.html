@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <div id="div_JS">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, libero illum! Minus illo molestias enim? Nostrum labore porro itaque, magnam placeat reiciendis voluptate obcaecati. Repellendus eum eius fugit porro ipsam.
+    </div>
+</body>
+
+<script>
+    document.getElementById("div_JS").addEventListener("click", function() {
+        this.style.fontSize = "32px";
+    });
+
+    document.getElementById("div_JS").addEventListener("dblclick", function() {
+        this.style.color = "red";
+    });
+
+    document.getElementById("div_JS").addEventListener("mouseover", function() {
+        this.style.backgroundColor = "blue";
+    });
+
+    document.getElementById("div_JS").addEventListener("mouseout", function() {
+        this.style.backgroundColor = "";
+    });
+
+    document.getElementById("div_JS").addEventListener("mousemove", function() {
+        this.innerHTML = parseInt(Math.random() * 10);
+    });
+</script>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <form action="#" method="GET">
+        <input type="color" id="u_color" />
+        <button type="button" onclick="createColor()">Click ME!</button>
+        <div id="u_form">
+
+        </div>
+    </form>
+</body>
+
+<script>
+    function createColor() {
+        var html = document.getElementById("u_color").value;
+
+        document.getElementById("u_form").style.height = "100px";
+        document.getElementById("u_form").style.width = "100px";
+        document.getElementById("u_form").style.marginTop = "60px";
+        document.getElementById("u_form").style.marginLeft = "60px";
+        document.getElementById("u_form").style.backgroundColor = html;
+    }
+</script>
+
+</html>

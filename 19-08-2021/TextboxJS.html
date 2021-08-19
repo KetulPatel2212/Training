@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <form name="frm">
+        <textarea id="tx1" cols="30" rows="10"></textarea>
+        <textarea id="tx2" cols="30" rows="10"></textarea>
+        <textarea id="tx3" cols="30" rows="10"></textarea>
+        <textarea name="tx4" id="tx4" cols="30" rows="10"></textarea>
+        <textarea name="tx5" id="tx5" cols="30" rows="10"></textarea><br/>
+
+        <textarea id="tx6" cols="30" rows="10"></textarea>
+        <textarea id="tx7" cols="30" rows="10"></textarea>
+        <textarea id="tx8" cols="30" rows="10"></textarea>
+        <textarea id="tx9" cols="30" rows="10"></textarea>
+        <textarea id="tx10" cols="30" rows="10"></textarea>
+    </form>
+</body>
+<script>
+    document.getElementById("tx1").addEventListener("focus", function() {
+        this.style.backgroundColor = "black";
+    });
+    document.getElementById("tx2").addEventListener("mouseover", function() {
+        this.style.height = "32px";
+        this.style.width = "32px";
+    });
+    document.getElementById("tx2").addEventListener("mouseout", function() {
+        this.style.height = "150px";
+        this.style.width = "227px";
+    });
+    document.getElementById("tx3").addEventListener("mousemove", function() {
+        this.innerHTML = "hello";
+    });
+    document.getElementById("tx4").addEventListener("keyup", function() {
+        frm.tx4.value = frm.tx4.value.toUpperCase();
+    });
+    document.getElementById("tx5").addEventListener("keydown", function() {
+        frm.tx5.value = frm.tx5.value.toLowerCase();
+    });
+
+    document.getElementById("tx6").addEventListener("click", function() {
+
+        this.style.height = "300px";
+        this.style.width = "300px";
+    });
+
+    document.getElementById("tx7").addEventListener("mouseup", function() {
+
+        this.style.borderColor = "red";
+    });
+
+    document.getElementById("tx8").addEventListener("mousedown", function() {
+
+        this.style.borderStyle = "dotted";
+    });
+
+    document.getElementById("tx9").addEventListener("blur", function() {
+
+        this.style.color = "red";
+        this.style.backgroundColor = "yellow";
+    });
+
+    document.getElementById("tx10").addEventListener("mouseout", function() {
+
+        this.style.borderRadius = "50px";
+    });
+</script>
+
+</html>

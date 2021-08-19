@@ -1,0 +1,31 @@
+<html>
+
+<head>
+
+
+    <title>Timer</title>
+</head>
+
+<body>
+
+    <button type="button" onclick="counter();">Start</button>
+    <button type="button" style="margin-left: 20px;" onclick="clearInterval(counting);">Stop</button>
+    <p id="show">20</p>
+</body>
+
+<script>
+    var count = 20;
+
+    function counter() {
+        counting = setInterval(function() {
+            document.getElementById("show").innerHTML = --count;
+            if (count == 0) {
+                clearInterval(counting);
+                alert("Time Up");
+                count = 21;
+            }
+        }, 1000);
+    }
+</script>
+
+</html>

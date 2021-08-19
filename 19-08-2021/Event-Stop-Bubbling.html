@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #outer {
+            height: 200px;
+            width: 300px;
+            background-color: red;
+            padding-top: 50px;
+            padding-left: 100px;
+        }
+        
+        #inner {
+            height: 140px;
+            width: 190px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="outer">
+        <div id="inner">
+
+        </div>
+    </div>
+</body>
+
+<script>
+    document.getElementById("outer").addEventListener("click", function(event) {
+        event.stopPropagation();
+        alert("Outer Div");
+    });
+
+    document.getElementById("inner").addEventListener("click", function(event) {
+        alert("Inner Div 1st time");
+        event.stopImmediatePropagation();
+    });
+
+    document.getElementById("inner").addEventListener("click", function(event) {
+        alert("Inner Div 2nd time");
+    });
+
+    document.body.addEventListener("click", function() {
+        alert("Body");
+    });
+</script>
+
+</html>
