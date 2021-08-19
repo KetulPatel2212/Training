@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <div style="display: inline-block;">
+        <div style="float: left;">
+
+            <input type="text" id="name" /><br/><br/>
+
+            <input type="button" value="submit" onclick="addMoreElements()" /><br/>
+            <span id="error"></span>
+        </div>
+        <div style="float: right;" id="add">
+
+        </div>
+    </div>
+
+</body>
+
+<script>
+    localStorage.setItem("array", JSON.stringify(new Array()));
+
+    function addMoreElements() {
+        var array = JSON.parse(localStorage.getItem("array"));
+
+        document.getElementById("error").innerHTML = "";
+
+        var add = document.getElementById("name").value;
+        if (add == "")
+            document.getElementById("error").innerHTML = "Plese enter a number";
+        else {
+            array.push(add);
+
+            var html = "<ul>";
+            for (var i = 0; i < array.length; i++)
+                html += "<li>" + array[i] + "</li>";
+            html += "</ul>";
+
+            document.getElementById("add").innerHTML = html;
+        }
+        localStorage.setItem("array", JSON.stringify(array));
+    }
+</script>
+
+</html>

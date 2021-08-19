@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <div style="display: inline-block;">
+        <div style="width: 40px;height: 400px; float: left;" id="show">
+            0
+        </div>
+        <div style="float: right;">
+            <button type="button" onclick="increment()">Click ME!</button>
+        </div>
+    </div>
+    <script>
+        function increment() {
+            var n = localStorage.getItem('counter');
+            if (n === 0 || n === null)
+                n = 1;
+            else
+                n++;
+
+            document.getElementById("show").innerHTML = n;
+            localStorage.setItem("counter", n);
+
+        }
+        localStorage.setItem("counter", 0);
+    </script>
+</body>
+
+</html>
