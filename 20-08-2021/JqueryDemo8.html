@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#fadeOutData").click(function() {
+                $("p").fadeOut();
+            });
+
+            $("#fadeInData").click(function() {
+                $("p").fadeIn();
+            });
+
+            $("#fadeToggleData").click(function() {
+                $("p").fadeToggle();
+            });
+
+            $("#fadeToData").click(function() {
+                $("p").fadeTo("slow", 0.4);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p style="background-color: red;">Hello</p>
+    <button type="button" id="fadeOutData">FadeOut</button>
+    <button type="button" id="fadeInData">FadeIn</button>
+    <button type="button" id="fadeToggleData">FadeToggle</button>
+    <button type="button" id="fadeToData">FadeTo</button>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#text1").hover(function() {
+                    $(this).css("background-color", "blueviolet");
+                },
+                function() {
+                    $(this).css("background-color", "red");
+                }
+            );
+            $("#text2").mouseenter(function() {
+                $(this).css("background-color", "black")
+            });
+
+            $("#text2").mouseout(function() {
+                $(this).css("background-color", "yellow");
+            });
+
+            $("#text3").mouseover(function() {
+                $(this).css("background-color", "pink");
+            });
+
+            $("#text3").mouseleave(function() {
+                $(this).css("background-color", "white");
+            });
+
+            $("#text4").mousemove(function() {
+                $(this).css("background-color", "#62DA1D");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p id="text1">Text 1</p>
+    <p id="text2">Text 2</p>
+    <p id="text3">Text 3</p>
+    <p id="text4">Text 4</p>
+</body>
+
+</html>

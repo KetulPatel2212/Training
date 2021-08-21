@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#slideUp").click(function() {
+                $("p").slideUp();
+            });
+
+            $("#slideDown").click(function() {
+                $("p").slideDown();
+            });
+
+            $("#slideToggle").click(function() {
+                $("p").slideToggle();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p style="background-color: red;">Hello</p>
+    <button type="button" id="slideUp">SlideUp</button>
+    <button type="button" id="slideDown">SlideDown</button>
+    <button type="button" id="slideToggle">slideToggle</button>
+</body>
+
+</html>

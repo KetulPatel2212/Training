@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("#text1").slideUp();
+                $("#text2").slideDown();
+                $("#text3").slideToggle();
+
+            });
+
+            $("button").dblclick(function() {
+                $("#text4").slideUp();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p id="text1" style="background-color: blue;">Text 1</p>
+    <p id="text2" style="background-color: blueviolet;">Text 2</p>
+    <p id="text3" style="background-color: brown;">Text 3</p>
+    <p id="text4" style="background-color: cadetblue;">Text 4</p>
+    <button type="button">Click Me!</button>
+</body>
+
+</html>
