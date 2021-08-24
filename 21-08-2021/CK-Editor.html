@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <title>My editor</title>
+</head>
+
+<body>
+    <textarea cols="80" rows="10" id="sample-editor" name="sample-editor"></textarea>
+    <script>
+        CKEDITOR.replace('sample-editor');
+    </script>
+
+</body>
+
+<script src="https://cdn.ckeditor.com/4.15.1/standard-all/ckeditor.js"></script>
+<script src="https://cdn.ckeditor.com/4.15.1/standard/ckeditor.js"></script>
+<script>
+    CKEDITOR.replace('sample-editor', {
+        extraPlugins: 'uicolor'
+    });
+</script>
+
+
+</html>

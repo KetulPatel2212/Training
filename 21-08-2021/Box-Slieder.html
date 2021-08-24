@@ -8,17 +8,24 @@
 
     <script>
         $(document).ready(function() {
-            $('.slider').bxSlider();
+            $('.slider').bxSlider({
+                'auto': true
+            });
         });
     </script>
 
+    <style>
+        img {
+            padding-left: 350px;
+        }
+    </style>
 </head>
 
 <body>
 
     <div class="slider">
-        <div>I am a slide.</div>
-        <div>I am another slide.</div>
+        <div><img src="photo-2.jpeg" alt=""></div>
+        <div><img src="photo-3.jpeg" alt=""></div>
     </div>
 
 </body>
