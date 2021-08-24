@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $(":text").css("background-color", "red");
+            $(":password").css("background-color", "red");
+            $(":reset").css("background-color", "red");
+            $(":checkbox").prop("checked", "true");
+            $(":radio").prop("checked", "true");
+            $(":submit").css("background-color", "red");
+            $(":button").css("background-color", "red");
+            $(":image").css("border", "solid 10px red");
+            $(":file").css("border", "solid 1px red");
+            $(":selected").css("background-color", "Green");
+            $(":enabled").attr("placeholder", "Enter Value");
+            $(":disabled").attr("placeholder", "disabled");
+            $("div:visible").css("color", "#2BE711");
+            $("tr:odd").append("- odd row ");
+            $("tr:even").append("- even row ");
+            // $(":checked").wrap("<span style='background-color:yellow'>");
+            alert('This document has ' + $("body").find(":hidden").not("script").length + ' hidden elements');
+        });
+    </script>
+</head>
+
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <td>
+                    <label>Name</label>
+                </td>
+                <td>
+                    <input type="text" name="" id="">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Email</label>
+                </td>
+                <td>
+                    <input type="email" name="" id="">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Password</label>
+                </td>
+                <td>
+                    <input type="password" name="" id="">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>disabled</label>
+                </td>
+                <td>
+                    <input type="email" name="" id="" disabled>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Select a gender</label>
+                </td>
+                <td>
+                    <input type="radio" name="g1" id="">Male &nbsp;
+                    <input type="radio" name="g1" id="">Female
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>select a subject</label>
+                </td>
+                <td>
+                    <select name="" id="">
+                       
+                        <option value="C">C</option>
+                        <option value="Java" >Java</option>
+                        <option value="C++" selected>C++</option>
+                        <option value="JS">JS</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>select</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="g1" id="">Select1 <br/>
+                    <input type="checkbox" name="g1" id="">Select2 <br/>
+                    <input type="checkbox" name="g1" id="">Select3 <br/>
+                    <input type="checkbox" name="g1" id="">Select4 <br/>
+                    <input type="checkbox" name="g1" id="">Select5 <br/>
+                    <input type="checkbox" name="g1" id="">Select6
+                </td>
+            </tr>
+
+            <tr>
+                <td>File</td>
+                <td>
+                    <input type="file" name="" id="">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Image</td>
+                <td>
+                    <input type="Image" name="" id="">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Hidden</td>
+                <td>
+                    <div hidden="true">
+                        First hidden div
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>visible</td>
+                <td>
+                    <div style="visibility: visible;">
+                        First Visibal div
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" name="" id="">&nbsp;
+                    <input type="reset"> &nbsp;
+                    <button type="button">Click ME!</button>
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+
+</html>
