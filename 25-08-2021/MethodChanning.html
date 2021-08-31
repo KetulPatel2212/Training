@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        class Calculator {
+
+
+
+            constructor(n) {
+                if (Number.isInteger(n))
+                    this.num = n;
+            }
+            add = function(n1) {
+                this.num += n1;
+                return this;
+            }
+            sub = function(n2) {
+                this.num -= n2;
+                return this;
+            }
+            mul = function(n3) {
+                this.num *= n3;
+                return this;
+            }
+            div = function(n4) {
+                this.num /= n4;
+                return this;
+            }
+
+
+            toString() {
+                return this.num;
+            }
+        }
+
+        var obj = new Calculator(10).add(5).mul(2).div(3).sub(2);
+        alert(obj);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
